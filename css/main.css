@@ -1,0 +1,109 @@
+body {
+  background: url(../images/wallpaper.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* font-family: 'Lato', sans-serif; */
+}
+
+html {
+  height: 100%;
+}
+.navbar-light {
+  background: transparent;
+}
+
+#header {
+  padding-top: 15%;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  text-shadow: 3px 3px 2px rgba(3, 0, 0, 0.25);
+}
+
+#content-button {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.btn-primary-test {
+  background: #ddd5d5;
+  opacity: 0.6;
+}
+
+#id {
+  float: left;
+}
+
+#navbar {
+  margin-right: auto;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+#nodelogo {
+  margin-right: -9%;
+}
+
+#reactlogo {
+  margin-left: -12%;
+}
+
+#reactTable-tr:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: rgba(3, 0, 0, 1);
+}
+
+#reactTable {
+  width: 50%;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(3, 0, 0, 0.5);
+  color: #ddd5d5;
+}
+
+#install_header {
+  margin-top: 2%;
+  text-align: center;
+}
+
+#install_hr {
+  width: 40%;
+}
+
+#install_node_header {
+  padding-top: 2%;
+  color: #7ab263;
+}
+
+#install_react_header {
+  color: #60dbfb;
+}
+#reactTitle {
+  color: #60dbfb;
+}
+#nodeheaderlogo {
+  padding-left: 2%;
+}
+.container_node {
+  color: white;
+  background-color: rgba(3, 0, 0, 0.6);
+}
+#node_hr {
+  margin-left: 0%;
+  width: 20%;
+}
+
+.nodeImage {
+  padding-left: 3%;
+}
+
+#conclusion {
+  width: 50%;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(3, 0, 0, 0.5);
+  color: #ddd5d5;
+}

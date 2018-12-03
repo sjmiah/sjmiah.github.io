@@ -1,0 +1,25 @@
+{
+  "name": "react-demo",
+  "version": "1.0.0",
+  "description": "Demo using React.js and Node.js",
+  "main": "demo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sjmiah/React-Tutorial.git"
+  },
+  "author": "Shajeed Miah, Aditya Medepalli, Shyum Ahmed, Erick Chin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sjmiah/React-Tutorial/issues"
+  },
+  "homepage": "https://github.com/sjmiah/React-Tutorial#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "react": "^16.6.3"
+  }
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Installation Guide</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="../css/main.css" />
+        <link
+          rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    </head>
+      <body>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container">
+              <a class="navbar-brand" href="../index.html"> <i class="fab fa-node-js"></i> <i class="fab fa-react"></i> Home</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav nav-fill w-100">
+                  <!-- <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a> -->
+                  <a class="nav-item nav-link" href="features.html">Features</a>
+                  <a class="nav-item nav-link active" href="install.html">Installation</a>
+                  <a class="nav-item nav-link" href="guide.html">Tutorial</a>
+                  <a class="nav-item nav-link" href="#">Demo App</a>
+                  <a class="nav-item nav-link" href="conclusion.html">Conclusion</a>
+                  <a class="nav-item nav-link" href="credits.html">Credits</a>
+                </div>
+              </div>
+      
+        </div>
+      </nav>
+
+      <div class="container">
+        <div id="install_header">
+          <h4>Installation Guide</h4>
+          <hr id="install_hr">
+           <h6>Get started with React & Node JS.</h6>
+      </div>
+
+      <div class="container container_node">
+        <div id="nodeTitle">
+          <h4 id="install_node_header">Installing NodeJS <img id="nodeheaderlogo" src="../images/node.png" alt="" width="10%" height="2%"></h4>
+          <hr id="node_hr">
+        </div>
+
+        <div class="container"">
+          <p id="nodeContent">
+            We first install our backend framework, NodeJS. This allows us to use it's valuable NPM (the Node Package Manager) to install further tools.
+          </p>
+          <p>
+            Visit the <a href="https://nodejs.org/en/">NodeJS</a> website, and choose a suitable version for installation.
+          </p>
+          <p>
+            Once the node packages are downloaded, run them and follow the steps provided in the wizard to complete your installation.
+          </p>
+          <p>
+              You can test whether node has successfully installed by entering the follow commands in your terminal: <br> 
+              <br>
+              <kbd>node -v</kbd> will output the currently installed version of NodeJS.<br>
+              <br>
+              Similarly, <kbd>npm -v</kbd> will output the currently installed version of NPM.
+              <br>
+              <br>
+          </p>
+        </div>
+      </div>
+    
+      <div class="container container_node">
+          <div id="nodeTitle">
+            <h4 id="install_react_header">Installing ReactJS <img id="nodeheaderlogo" src="../images/reactlogo.png" alt="" width="10%" height="2%"></h4>
+            <hr id="node_hr">
+          </div>
+  
+          <div class="container"">
+            <p id="nodeContent">
+              We can now begin working on our front-end framework. Thankfully, getting started on ReactJS is seamless. There are two methods.
+            </p>
+            <p>
+             <b><u>Note:</u></b> Visiting the <a href="https://reactjs.org/docs/getting-started.html">ReactJS</a> website is always very helpful. 
+            </p>
+            <p>
+              
+            </p>
+            <p>
+               <b id="reactTitle">Adding React to a website directly:</b> <br> 
+                <br>
+                Start by adding a DOM element into our HTML: <kbd><code>&lt;div id="start_element"&gt&lt;/div&gt;</code></kbd> <br>
+                <br>
+                Next, include 3 scripts within the HTML's body:  <br>
+                <code>
+  &ltscript src="https://unpkg.com/react@16/umd/react.development.js" crossorigin&gt&lt/script&gt <br>
+  &ltscript src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin&gt&lt/script&gt <br>
+
+  <!-- Load our React component. -->
+  &ltscript src="like_button.js"&gt&lt/script&gt  <kbd>Note: This script loads the React Component. </kbd> <br> 
+                </code> <br>
+                <i>If you would like, create an element using <code>const var = React.createElement;</code></i> <br> <br>
+                Next, create a class <code>class StartElement extends React.Component{ <kbd>Enter code here</kbd> }</code>. Fill the class with your desired functionality.<br> <br>
+                Lastly, link the React component with your DOM element by entering in the following lines of code: <br>
+                <code>
+                    const domContainer = document.querySelector('#like_button_container');
+                    ReactDOM.render(e(LikeButton), domContainer);
+                </code>
+            </p>
+            
+            <p>
+                <b id="reactTitle">(Method 2) Creating a React App:</b> <br> <br>
+                Since NodeJs is already installed, we can quickly get to creating a ReactApp with a few lines of terminal entries as follows:  <br>
+                <code>
+                    npx create-react-app my-app <kbd>This line creates an app directory called my-app</kbd> <br>
+                    cd my-app <kbd>Enters you into the newly created directory (the new working directory)</kbd> <br>
+                    npm start <kbd>Starts the creative process</kbd> <br>
+                </code> <br>
+                When ready to deploy to production, you can run the command: 
+                <code>
+                  npm run build
+                </code> <br> <br>
+                It's  <b>THAT</b> simple! 
+            </p>
+          </div>
+        </div>
+
+      </div>
+        <script src="" async defer></script>
+    </body>
+</html>
